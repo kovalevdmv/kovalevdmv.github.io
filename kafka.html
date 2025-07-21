@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(103372801, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/103372801"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apache Kafka Connector - Внешняя компонента для 1С</title>
+    <meta
+      name="description"
+      content="Нативная внешняя компонента на Rust для интеграции 1С с Apache Kafka. Высокопроизводительная потоковая обработка данных без REST-прокси."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">1C Tools</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="rabbitmq.html">RabbitMQ</a></li>
+          <li><a href="kafka.html" class="active">Apache Kafka</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="component-detail">
+        <div class="container">
+          <div class="detail-header">
+            <div class="component-icon" style="margin: 0 auto">⚡</div>
+            <h1>Apache Kafka Connector</h1>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto">
+              Нативный высокопроизводительный коннектор для интеграции
+              1С:Предприятие с Apache Kafka, созданный на Rust.
+            </p>
+          </div>
+
+          <div class="detail-content">
+            <div class="detail-info">
+              <h3>Описание компоненты</h3>
+              <p>
+                <strong>Apache Kafka Connector</strong> — это ваш прямой мост из
+                1С в мир больших данных и event-driven архитектуры. Компонента,
+                написанная на Rust с использованием NativeAPI, обеспечивает
+                производительность и надежность, исключая необходимость в
+                сложных REST-прокси.
+              </p>
+              <p>
+                Это идеальное решение для систем, требующих обработки потоков
+                данных в реальном времени, будь то финансовые транзакции, логи,
+                или события от IoT устройств.
+              </p>
+
+              <h3>Ключевые возможности</h3>
+
+              <ul class="features-list">
+                <li>
+                  <strong>Сокращайте время на разработку</strong>: готовые
+                  обработки-обертки предоставляют автодополнение кода, подсказки
+                  по методам и проверку параметров.
+                </li>
+                <li>
+                  <strong>Интегрируйте потоки данных</strong> из любых систем в
+                  1С для аналитики и обработки в реальном времени.
+                </li>
+                <li>
+                  <strong>Добавляйте метаданные</strong> к сообщениям для
+                  сложной маршрутизации и фильтрации (через заголовки).
+                </li>
+                <li>
+                  <strong>Ускоряйте загрузку данных из внешних систем</strong>
+                  (например, заказов с сайта), обрабатывая их в несколько
+                  потоков одновременно.
+                </li>
+                <li>
+                  <strong>Гарантируйте обработку каждого сообщения</strong>: оно
+                  не будет потеряно, если в процессе произойдет сбой (ручной
+                  commit).
+                </li>
+                <li>
+                  <strong>Контролируйте "здоровье"</strong> и статусы всех
+                  активных обработчиков для построения отказоустойчивых решений.
+                </li>
+                <li>
+                  <strong>Управляйте обработчиками на лету</strong>: программно
+                  запускайте и останавливайте их по необходимости.
+                </li>
+              </ul>
+
+              <div class="tech-specs">
+                <h4>Технические характеристики</h4>
+                <ul>
+                  <li>
+                    <strong>Ядро компоненты:</strong> Rust + C++ (NativeAPI)
+                  </li>
+                  <li><strong>Платформы:</strong> Windows x64, Linux x64</li>
+                  <li>
+                    <strong>Совместимость с 1С (Windows):</strong> 8.3.21 и выше
+                    (для работы в изолированном режиме)
+                  </li>
+                  <li>
+                    <strong>Совместимость с 1С (Linux):</strong> без ограничений
+                    по версии платформы
+                  </li>
+                  <li>
+                    <strong>Обработка ошибок:</strong> Возврат структуры с типом
+                    "Error" вместо исключений для предсказуемого кода.
+                  </li>
+                  <li>
+                    <strong>Лицензирование:</strong> Простая и надежная проверка
+                    лицензии встроенными средствами компоненты.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pricing-card">
+              <h3 class="text-center">Apache Kafka Connector</h3>
+              <div class="price text-center" style="margin: 2rem 0">
+                10,000 <span class="price-currency">₽</span>
+              </div>
+
+              <ul class="features-list" style="margin-bottom: 2rem">
+                <li>Бессрочная лицензия</li>
+                <li>Producer & Consumer API</li>
+                <li>Schema Registry поддержка</li>
+                <li>Гарантия и обновления</li>
+                <li>Monitoring утилиты</li>
+              </ul>
+
+              <div
+                class="component-actions"
+                style="flex-direction: column; gap: 1rem"
+              >
+                <a
+                  href="https://t.me/kovalevdmv"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  Купить компоненту
+                </a>
+                <a
+                  href="https://github.com/kovalevdmv/1CApacheKafka/releases"
+                  target="_blank"
+                  class="btn btn-outline"
+                >
+                  Бесплатная ограниченная версия
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>1C Tools</h4>
+            <p>
+              Современные решения для интеграции 1С с внешними системами обмена
+              сообщениями.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Продукты</h4>
+            <p><a href="rabbitmq.html">RabbitMQ Connector</a></p>
+            <p><a href="kafka.html">Apache Kafka Connector</a></p>
+          </div>
+          <div class="footer-section">
+            <h4>Поддержка</h4>
+            <p>
+              <a
+                href="https://t.me/kovalevdmv"
+                target="_blank"
+                class="telegram-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle; margin-right: 8px"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.25 8.25L11.25 13.25"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.25 8.25L8.75 11.25L11.25 13.25L13.25 15.25L16.25 8.25Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                @kovalevdmv
+              </a>
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Документы</h4>
+            <p>
+              <a
+                href="https://github.com/kovalevdmv/1CApacheKafka/releases/download/0.9.51/offer.agreement.docx"
+                target="_blank"
+                >Договор оферты</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 1C Tools. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function buyComponent(component) {
+        // Здесь будет интеграция с платежной системой
+        alert("Переход к оплате компоненты " + component.toUpperCase());
+      }
+
+      function downloadDemo(component) {
+        // Здесь будет ссылка на демо версию
+        alert("Скачивание демо версии " + component.toUpperCase());
+      }
+
+      function downloadLatest(component) {
+        // Здесь будет ссылка на последнюю версию
+        alert("Скачивание последней версии " + component.toUpperCase());
+      }
+
+      // Add active class to current navigation item
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll(".nav-links a");
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPath.split("/").pop()) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

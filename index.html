@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Перенаправление...</title>
-    <meta http-equiv="refresh" content="0; url=https://github.com/kovalevdmv/kovalevdmv">
-    <link rel="canonical" href="https://github.com/kovalevdmv/kovalevdmv" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1C Tools - Внешние компоненты для 1С</title>
+    <meta name="description" content="Профессиональные внешние компоненты для 1С:Предприятие. RabbitMQ и Apache Kafka интеграции.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Если вас не перенаправило автоматически, перейдите по этой <a href="https://github.com/kovalevdmv/kovalevdmv">ссылке на репозиторий</a>.</p>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">1C Tools</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="rabbitmq.html">RabbitMQ</a></li>
+                <li><a href="kafka.html">Apache Kafka</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Современный обмен данными для 1С:Предприятие</h1>
+                <p>Нативные компоненты для прямой интеграции с RabbitMQ и Apache Kafka. Реализуйте быструю и надежную архитектуру без лишних слоев.</p>
+                <a href="#components" class="cta-button">
+                    Посмотреть компоненты
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="components" class="container">
+            <h2 class="text-center mb-3">Наши компоненты</h2>
+            <div class="components-grid">
+                <!-- RabbitMQ Component -->
+                <div class="component-card">
+                    <div class="component-icon">🐰</div>
+                    <h3>RabbitMQ Connector</h3>
+                    <p>Надежный и гибкий инструмент для интеграции 1С с RabbitMQ. Построенный на Rust, наш коннектор обеспечивает стабильную работу и простоту использования, позволяя реализовать самые сложные сценарии обмена сообщениями без лишних прослоек.</p>
+                    
+                    <ul class="features-list">
+                        <li>Быстрая разработка с готовыми обработками-обертками</li>
+                        <li>Параллельная обработка для ускорения интеграций</li>
+                        <li>Гарантированная доставка сообщений (Publisher Confirms)</li>
+                        <li>Гибкая маршрутизация и аналитика (свойства и заголовки)</li>
+                        <li>Поддержка любых сценариев: от очередей до stream pub/sub</li>
+                    </ul>
+
+                    <div class="price">
+                        15,000 <span class="price-currency">₽</span>
+                    </div>
+
+                    <div class="component-actions">
+                        <a href="https://t.me/kovalevdmv" target="_blank" class="btn btn-primary">Купить</a>
+                        <a href="rabbitmq.html" class="btn btn-outline">Подробнее и демо</a>
+                    </div>
+                </div>
+
+                <!-- Apache Kafka Component -->
+                <div class="component-card">
+                    <div class="component-icon">⚡</div>
+                    <h3>Apache Kafka Connector</h3>
+                    <p>Нативный коннектор для Apache Kafka, разработанный на Rust для максимальной надежности и безопасности. Откажитесь от сложных архитектур с REST-прокси в пользу прямой интеграции.</p>
+                    
+                    <ul class="features-list">
+                        <li>Реализация Producer и Consumer API</li>
+                        <li>Гибкое управление чтением (Topic, Partition, Offset)</li>
+                        <li>Асинхронное получение в отдельном потоке</li>
+                        <li>Ручное подтверждение смещений (commit)</li>
+                        <li>Программное управление и мониторинг потребителей</li>
+                    </ul>
+
+                    <div class="price">
+                        10,000 <span class="price-currency">₽</span>
+                    </div>
+
+                    <div class="component-actions">
+                        <a href="https://t.me/kovalevdmv" target="_blank" class="btn btn-primary">Купить</a>
+                        <a href="kafka.html" class="btn btn-outline">Подробнее и демо</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container text-center" style="padding: 4rem 0;">
+            <h2>Почему выбирают наши компоненты?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="padding: 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                    <h3>Удобство для разработчика</h3>
+                    <p>Компоненты поставляются в виде готовых обработок-оберток. Вы получаете подсказки по методам, автодополнение кода, проверку параметров и автоматическую сериализацию, что избавляет от низкоуровневой рутины и ускоряет разработку.</p>
+                </div>
+                <div style="padding: 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                    <h3>Надежность</h3>
+                    <p>Протестированы в production-среде. Надежная обработка ошибок и механизмы для отказоустойчивости.</p>
+                </div>
+                <div style="padding: 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📞</div>
+                    <h3>Поддержка от автора и гарантии</h3>
+                    <p>Приобретая компонент, вы получаете постоянные бесплатные обновления и гарантию на исправление ошибок. В стоимость включена краткая стартовая консультация, которая поможет вам выбрать оптимальный сценарий использования.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>1C Tools</h4>
+                    <p>Современные решения для интеграции 1С с внешними системами обмена сообщениями.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукты</h4>
+                    <p><a href="rabbitmq.html">RabbitMQ Connector</a></p>
+                    <p><a href="kafka.html">Apache Kafka Connector</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <p><a href="https://t.me/kovalevdmv" target="_blank" class="telegram-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.25 8.25L11.25 13.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.25 8.25L8.75 11.25L11.25 13.25L13.25 15.25L16.25 8.25Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        @kovalevdmv
+                    </a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Документы</h4>
+                    <p><a href="https://github.com/kovalevdmv/1CRabbitMQ/releases/download/0.9.92/offer.agreement.docx" target="_blank">Договор оферты (RabbitMQ)</a></p>
+                    <p><a href="https://github.com/kovalevdmv/1CApacheKafka/releases/download/0.9.51/offer.agreement.docx" target="_blank">Договор оферты (Kafka)</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 1C Tools. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to current navigation item
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath.split('/').pop() || 
+                (currentPath.includes('index') && link.getAttribute('href') === 'index.html')) {
+                link.classList.add('active');
+            }
+        });
+    </script>
 </body>
-</html> 
+</html>
